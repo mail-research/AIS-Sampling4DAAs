@@ -1,0 +1,33 @@
+compute_environment: LOCAL_MACHINE
+debug: false
+deepspeed_config:
+  max_grad_norm: 10.0
+  gradient_clipping: 10.0
+  offload_optimizer_device: none
+  reduce_bucket_size: auto
+  stage3_prefetch_bucket_size: auto
+  stage3_max_reuse_distance: auto
+  stage3_max_live_parameters: auto
+  sub_group_size: auto
+  zero_hpz_partition_size: 8
+  zero_quantized_weights: false
+  zero_quantized_gradients: false
+  wall_clock_breakdown: false
+  prescale_gradients: false
+  offload_param_device: none
+  zero3_init_flag: false
+  zero_stage: 2
+  steps_per_print: 100
+distributed_type: DEEPSPEED
+downcast_bf16: 'no'
+machine_rank: 0
+main_training_function: main
+mixed_precision: bf16
+num_machines: 1
+num_processes: 4
+rdzv_backend: static
+same_network: true
+tpu_env: []
+tpu_use_cluster: false
+tpu_use_sudo: false
+use_cpu: false
