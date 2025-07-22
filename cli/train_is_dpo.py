@@ -21,8 +21,6 @@ from accelerate import Accelerator
 import json
 import tyro
 import sys
-# sys.path.append('/cluster/tufts/laolab/kdoan02/RLHF-training')
-sys.path.append('/projects/extern/kisski/kisski-umg-fairpact-2/dir.project/benchmark/RLHF-training')
 from dataset.reward_dataset import *
 from config import DPOConfig
 import os

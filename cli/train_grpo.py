@@ -24,7 +24,6 @@ from accelerate import Accelerator
 import json
 import tyro
 import sys
-sys.path.append('/home/phuc/project/rlhf_training')
 from dataset.data_utils import *
 from config import Config, GRPOConfig
 import os

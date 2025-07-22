@@ -21,7 +21,6 @@ from accelerate import Accelerator
 import json
 import tyro
 import sys
-sys.path.append('/home/phuc/project/rlhf_training')
 from dataset.reward_dataset import *
 from config import Config, DPOConfig
 import os

@@ -22,7 +22,6 @@ from accelerate import Accelerator
 import json
 import tyro
 import sys
-sys.path.append('/cluster/tufts/laolab/kdoan02/RLHF-training')
 from utils import truncate_right, unwrap_model_for_generation, batch_generation
 from dataset.data_utils import *
 from config import OnlineDPOConfig

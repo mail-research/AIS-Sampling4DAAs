@@ -16,7 +16,6 @@ from accelerate import Accelerator
 import json
 import tyro
 import sys
-sys.path.append('/projects/extern/kisski/kisski-umg-fairpact-2/dir.project/benchmark/RLHF-training')
 from dataset.data_utils import *
 from config import Config
 import os
