@@ -48,7 +48,7 @@ In addition to IS-DAAs, we evaluate several existing baselines that address the 
 To train the model, run the following command:
 
 ```bash
-python src/scripts/train.py --config config.yaml
+python scripts/train.py --config config.yaml
 ```
 
 ### Evaluation
@@ -56,7 +56,7 @@ python src/scripts/train.py --config config.yaml
 To evaluate the model, run the following command:
 
 ```bash
-python src/scripts/evaluate.py --model_path path/to/model
+python scripts/evaluate.py --model_path path/to/model
 ```
 
 ## Citation
